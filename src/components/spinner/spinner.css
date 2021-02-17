@@ -1,101 +1,76 @@
-
-.loadingio-spinner-double-ring-u97m2yz364 {
-    margin: 0 auto;
+@keyframes lds-double-ring {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
 }
 
+@-webkit-keyframes lds-double-ring {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes lds-double-ring_reverse {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+  }
+}
+@-webkit-keyframes lds-double-ring_reverse {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+  }
+}
 
-@keyframes ldio-zq85abux4ml {
-    0% { transform: rotate(0) }
-    100% { transform: rotate(360deg) }
-  }
-  .ldio-zq85abux4ml div { box-sizing: border-box!important }
-  .ldio-zq85abux4ml > div {
-    position: absolute;
-    width: 71.76px;
-    height: 71.76px;
-    top: 16.12px;
-    left: 16.12px;
-    border-radius: 50%;
-    border: 5.2px solid #000;
-    border-color: #ffe81f transparent #ffe81f transparent;
-    animation: ldio-zq85abux4ml 1.8518518518518516s linear infinite;
-  }
-  
-  .ldio-zq85abux4ml > div:nth-child(2), .ldio-zq85abux4ml > div:nth-child(4) {
-    width: 59.28px;
-    height: 59.28px;
-    top: 22.36px;
-    left: 22.36px;
-    animation: ldio-zq85abux4ml 1.8518518518518516s linear infinite reverse;
-  }
-  .ldio-zq85abux4ml > div:nth-child(2) {
-    border-color: transparent #ec0505 transparent #ec0505
-  }
-  .ldio-zq85abux4ml > div:nth-child(3) { border-color: transparent }
-  .ldio-zq85abux4ml > div:nth-child(3) div {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    transform: rotate(45deg);
-  }
-  .ldio-zq85abux4ml > div:nth-child(3) div:before, .ldio-zq85abux4ml > div:nth-child(3) div:after { 
-    content: "";
-    display: block;
-    position: absolute;
-    width: 5.2px;
-    height: 5.2px;
-    top: -5.2px;
-    left: 28.080000000000002px;
-    background: #ffe81f;
-    border-radius: 50%;
-    box-shadow: 0 66.56px 0 0 #ffe81f;
-  }
-  .ldio-zq85abux4ml > div:nth-child(3) div:after {
-    left: -5.2px;
-    top: 28.080000000000002px;
-    box-shadow: 66.56px 0 0 0 #ffe81f;
-  }
-  
-  .ldio-zq85abux4ml > div:nth-child(4) { border-color: transparent; }
-  .ldio-zq85abux4ml > div:nth-child(4) div {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    transform: rotate(45deg);
-  }
-  .ldio-zq85abux4ml > div:nth-child(4) div:before, .ldio-zq85abux4ml > div:nth-child(4) div:after {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 5.2px;
-    height: 5.2px;
-    top: -5.2px;
-    left: 21.84px;
-    background: #ec0505;
-    border-radius: 50%;
-    box-shadow: 0 54.08px 0 0 #ec0505;
-  }
-  .ldio-zq85abux4ml > div:nth-child(4) div:after {
-    left: -5.2px;
-    top: 21.84px;
-    box-shadow: 54.08px 0 0 0 #ec0505;
-  }
-  .loadingio-spinner-double-ring-u97m2yz364 {
-    width: 104px;
-    height: 104px;
-    display: inline-block;
-    overflow: hidden;
-    background: none;
-  }
-  .ldio-zq85abux4ml {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    transform: translateZ(0) scale(1);
-    backface-visibility: hidden;
-    transform-origin: 0 0; /* see note above */
-  }
-  .ldio-zq85abux4ml div { box-sizing: content-box; }
-  
+.lds-css {
+  margin: 0 auto;
+}
 
-  
+.lds-double-ring {
+  position: relative;
+}
+.lds-double-ring div {
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  top: 20px;
+  left: 20px;
+  border-radius: 50%;
+  border: 8px solid #000;
+  border-color: #3d7ec0 transparent #3d7ec0 transparent;
+  -webkit-animation: lds-double-ring 1.5s linear infinite;
+  animation: lds-double-ring 1.5s linear infinite;
+}
+.lds-double-ring div:nth-child(2) {
+  width: 140px;
+  height: 140px;
+  top: 30px;
+  left: 30px;
+  border-color: transparent #cc4545 transparent #cc4545;
+  -webkit-animation: lds-double-ring_reverse 1.5s linear infinite;
+  animation: lds-double-ring_reverse 1.5s linear infinite;
+}
+.lds-double-ring {
+  width: 77px !important;
+  height: 77px !important;
+  -webkit-transform: translate(-38.5px, -38.5px) scale(0.385) translate(38.5px, 38.5px);
+  transform: translate(-38.5px, -38.5px) scale(0.385) translate(38.5px, 38.5px);
+}
